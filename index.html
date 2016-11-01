@@ -1,1 +1,459 @@
-My GH Page
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- using twitter bootstrap, but of course -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://www.imxprs.com/css/fonts.css?v=1.3.2">
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+
+    <!-- jQuery Module -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- could easily use a custom property of the state here instead of 'name' -->
+    <title>Kaiser Dandangi</title>
+
+    <style type="text/css">
+      .item-description { margin-top: 20px; }
+      .heroku-color {
+        background-color: #79589F;
+        background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, rgba(159,88,150,0)), color-stop(1, rgba(159,88,150,0.6)));
+        background-image: -o-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -moz-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -webkit-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -ms-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: linear,to left bottom,rgba(159,88,150,0) 0%,rgba(159,88,150,0.6) 100%;
+      }
+      .footer-area {
+        /*Lifted from Heroku*/
+        /*color: #fff;*/
+        background-color: #79589F;
+        background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, rgba(159,88,150,0)), color-stop(1, rgba(159,88,150,0.6)));
+        background-image: -o-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -moz-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -webkit-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -ms-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: linear,to left bottom,rgba(159,88,150,0) 0%,rgba(159,88,150,0.6) 100%;
+        /*Lifted from Heroku*/
+
+        height: 200px; 
+        padding-top: 50px;
+        margin-top: 50px;
+        text-align: center;
+        color: rgba(255,255,255,0.75); 
+      }
+
+      .footer-area a {
+        color: rgba(255,255,255,0.75); 
+        padding: 10px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+
+      .footer-area a:hover {
+        color: rgba(255,255,255,1); 
+      }
+
+      .project-entry {
+        text-align: center;
+        margin-bottom: 40px;
+        /*padding-top: 20px;*/
+        /*padding-bottom: 20px;*/
+        /*border: 3px solid black;*/
+        padding: 15px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+        /*Lifted from Heroku*/
+        /*color: #fff;*/
+        /*background-color: #79589F;*/
+        /*background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, rgba(159,88,150,0)), color-stop(1, rgba(159,88,150,0.6)));
+        background-image: -o-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -moz-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -webkit-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -ms-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: linear,to left bottom,rgba(159,88,150,0) 0%,rgba(159,88,150,0.6) 100%;*/
+        /*Lifted from Heroku*/
+      }
+
+      .project-entry img {
+        height: 150px;
+      }
+
+      .no-logo { 
+        width: 150px; 
+        /*background-color: rgba(0,0,0,0.9);*/ 
+      }
+
+      .project-entry p {
+        height: 150px;
+      }
+
+      .section-header {
+        /*text-align: center;*/
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+        border-bottom: 3px solid rgba(159,88,150,1);
+      }
+
+      .header {
+        height: 50px;
+      }
+
+      .header a {
+        color: black;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+
+      .header a:hover {
+        -ms-transform: translate(0px, -10px); /* IE 9 */
+        -webkit-transform: translate(0px, -10px); /* Safari */
+        transform: translate(0px, -10px);
+      }
+
+      .header-icon {
+        line-height: 1.5;
+        margin-bottom: 0px;
+      }
+
+      h1.header-icon {
+        font-size: 42px;
+      }
+
+      img {
+        height: 300px;
+      }
+
+      img.hack-badges {
+        height: 150px;
+      }
+
+      .margin-top-bottom {
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+
+
+      .work-entry {
+        /*border: 3px solid black;*/
+        /*background-color: rebeccapurple;*/
+        /*background-color: black;*/
+        color: rgba(255,255,255,1);
+        padding: 25px;
+        margin-bottom: 40px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+      }
+
+      @media (min-width: 1024px) {
+        .container {
+            width: 960px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .work-entry {
+          height: 400px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        li.is-hidden-sm {
+          display: none;
+        }
+      }
+
+      @media (max-width: 360px) {
+        li.is-hidden-xsm {
+          display: none;
+        }
+      }
+
+      .work-entry ul {
+        padding-left: 16px;
+        list-style-type: square;
+      }
+
+      .jumbotron {
+        /*text-align: center;*/
+        border-radius: 0px !important;
+        /*Lifted from Heroku*/
+        color: #fff;
+        background-color: #79589F;
+        background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, rgba(159,88,150,0)), color-stop(1, rgba(159,88,150,0.6)));
+        background-image: -o-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -moz-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -webkit-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: -ms-linear-gradient(left bottom, rgba(159,88,150,0) 0%, rgba(159,88,150,0.6) 100%);
+        background-image: linear,to left bottom,rgba(159,88,150,0) 0%,rgba(159,88,150,0.6) 100%;
+        /*Lifted from Heroku*/
+      }
+
+      .jumbotron p {
+        line-height: 1.6;
+      }
+
+      .jumbotron a {
+        font-size: 24px;
+        color: rgba(255,255,255,1);
+        /*color: #56CDFC;*/
+        border-bottom: #fff solid 4px;
+        text-decoration: none;
+      }
+
+      .jumbotron a:hover {
+        border-bottom: #fff dotted 4px;
+        /*border-bottom: #ff946b dotted 4px; from: http://eatsleepvector.com/*/
+      }
+
+      .btn-dark {
+        border-radius: 0px;
+        color: #fff;
+        /*background-color: rgba(0,0,0,0.95);*/
+        background-color: black;
+        border-color: #795FFF;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+      .btn-dark:focus,
+      .btn-dark.focus {
+        color: #fff;
+        background-color: rgba(0,0,0,0.65);
+      }
+      .btn-dark:hover {
+        color: #fff;
+        transform: scale(1.2,1.2);
+      }
+      .btn-dark:active,
+      .btn-dark.active,
+      .open > .dropdown-toggle.btn-dark {
+        color: #fff;
+        transform: scale(1.2,1.2);
+      }
+
+      #address-popup {
+        padding: 15px;
+        background: rgba(0,0,0,1);
+        position:fixed;
+        /*display:none;*/
+        text-align: right;
+        top: 100%;
+        /*top: calc(50% - 75px);*/
+        left: calc(50% - 150px);
+        width:300px;
+        height:150px;
+        -webkit-transition: 0.2s ease-out;
+        transition: 0.2s ease-out;
+      }
+
+      #address-popup div {
+        padding-top: 20px;
+        text-align: center;
+        color: white;
+      }
+
+    </style>
+  
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation">
+                      <a href="https://github.com/kamikaz1k/">
+                        <i class="fa fa-github-alt fa-3x" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a href="https://ca.linkedin.com/in/kaiserdandangi">
+                        <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li role="presentation" class="is-hidden-sm">
+                      <a href="https://medium.com/@kamikaz1_k">
+                        <i class="fa fa-medium fa-3x" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li role="presentation" class="is-hidden-xsm">
+                      <a href="#projects">
+                        <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="header-icon">KD</h1>
+        </div>
+    </div>
+ 
+    <div class="container">
+        <div class="jumbotron">
+            <!-- <h1>Kaiser Dandangi</h1> -->
+            <h3>Imagine. Engineer. Execute.</h3>
+            <p>Kaiser Dandangi is an engineer with a passion for progress and he is ready for his next big challenge. 
+              Currently working as a Dev Lead looking for a challenging and high learning potential role in either Product or Engineering.</p>
+            <p>I am very proficient in JavaScript and the <a href="#cravelist">AngularJS</a> Framework. 
+              I am developing a skillset in <a href="#sonartyde">React</a> and <a href="#boomstream">NodeJS</a>. 
+              And I have experience working with <a href="https://github.com/kamikaz1k/chez_dandangi">Python/Flask</a>, 
+              and <a href="https://github.com/kamikaz1k/cravelist-android">Java/Android</a>.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="container margin-top-bottom">
+
+          <h1 class="section-header" id="professional">Professional</h1>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <div class="work-entry heroku-color">
+                <h3>UI Architect/Dev Lead</h3>
+                <h4><span>Capgemini Canada</span></h4>
+                <ul>
+                  <li>Managed a remote developer team to deliver a complex SPA using the AngularJS Framework.</li>
+                  <li>Incorporated Test Driven Development (TDD) practices by establishing unit testing guidelines 
+                    and implementing processes for test case creation, code coverage, and pass criteria</li>
+                  <li>Conducted code reviews and established a style guide that incorporated best practices for JS and Angular code</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="work-entry heroku-color">
+                <h3>Technical Co-Founder</h3>
+                <h4><span>Learning Blocks Inc.</span></h4>
+                <ul>
+                  <li>Created a hybrid mobile application, supported by a hosted backend.</li>
+                  <li>Designed and setup the database schemes for the hosted service on Parse/Heroku</li>
+                  <li>Designed and setup data store schemes, data security plans, auth & privilege management, and REST endpoints</li>
+                  <li>Conducted requirements gathering for MVP and Client Beta.</li>
+                  <li>Applicationtracks Client progress, generates reports ad-hoc, & creates lesson plans</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+    </div>
+
+    <div class="container margin-top-bottom">
+        
+        <h1 class="section-header" id="projects">Projects</h1>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+              <div class="project-entry" id="cravelist">
+                <img src="https://lh3.googleusercontent.com/9MuU7GB0IF8K1ffs4qfVkZE1enVfC_nmRvXINYMrkqIcrU02X4hoIZfNhTHlCG4gHPCd=w300-rw" class="img-circle">
+                <h3>CraveList</h3>
+                <p class="item-description">A foodie app to keep track of all the things you want to eat. 
+                  Built using Ionic (Cordova + Angular) the application runs on both iOS and Android.</p>
+              <a class="btn btn-dark" href="https://play.google.com/store/apps/details?id=com.technosnaxapps.cravelist">More Info</a>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="project-entry" id="boomstream">
+                <img src="http://i.imgur.com/rIWqSkh.png">
+                <h3>BoomStream</h3>
+                <p class="item-description">Listen to music with your friends at the same time!
+                  The application uses nodeJS and websockets to keep clients in sync.</p>
+              <a class="btn btn-dark" href="https://github.com/kddial/streamSync">More Info</a>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="project-entry" id="sonartyde">
+                <img src="http://i.imgur.com/TmVQvBp.png" class="img-circle">
+                <h3>SonarTyde</h3>
+                <p class="item-description">
+                    Enjoy truly random tracks from SoundCloud's extensive library of music. 
+                    App uses React's component first pattern to put together a simple but modular app.
+                </p>
+              <a class="btn btn-dark" href="https://github.com/kamikaz1k/sonar_tyde">More Info</a>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="project-entry" id="sweepmines">
+                <img class="img-circle no-logo" style="background-color: rgba(10,10,120,0.9);">
+                <h3>SweepMines</h3>
+                <p class="item-description">
+                    Look for mines in a grid...totally original idea. 
+                    Built fully in vanilla JavaScript using Object Oriented Programming principles.
+                </p>
+                <a class="btn btn-dark" href="https://kamikaz1k.github.io/sweepmines/">More Info</a>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="project-entry" id="pickemupgo">
+                <img class="img-circle no-logo" style="background-color: rgba(120,10,120,0.9);">
+                <h3>Pick'em'up GO!</h3>
+                <p class="item-description">
+                    An ad-hoc event hosting service. Host pickup games and post it on the internet. 
+                    Supports login using FB, Twitter, Google OAuth2.0 
+                    (Might take some time for the container to spin up.)
+                </p>
+              <a class="btn btn-dark" href="https://pickemupgo.herokuapp.com/">More Info</a>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="project-entry" id="mixerjs">
+                <img class="img-circle no-logo" style="background-color: rgba(10,120,10,0.9);">
+                <h3>MixerJS</h3>
+                <p class="item-description">
+                    Mix songs online and share them with your friends.
+                    Powered by HowlerJS and magic~
+                </p>
+              <a class="btn btn-dark" href="https://github.com/kamikaz1k/mixerjs">Coming soon~</a>
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="address-popup">
+      <button class="btn btn-dark" onclick="hideEmail()"><i class="fa fa-close" aria-hidden="true"></i></button>
+      <div class="message">
+        <p>kaiser.dandangi@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="container-fluid footer-area">
+        <footer class="footer"> 
+            <p style="font-family:Raleway;">GET IN TOUCH</p>
+            <a href="https://github.com/kamikaz1k/"><i class="fa fa-github-alt fa-3x" aria-hidden="true"></i></a>
+            <a href="https://ca.linkedin.com/in/kaiserdandangi"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+            <a href="https://medium.com/@kamikaz1_k"><i class="fa fa-medium fa-3x" aria-hidden="true"></i></a>
+            <a onclick="showEmail()"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+            <!-- <a href="mailto:kaiser.dandangi@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a> -->
+            
+            <br>
+            <br>
+            <br>
+            <p style="font-family:Raleway;">&copy; Kaiser Dandangi 2016</p>
+        </footer>
+    </div>
+  
+    <script type="text/javascript">
+    function showEmail(){
+      var height = window.innerHeight/2 - 75;
+      // console.log("Show email", height);
+      document.getElementById("address-popup").style.top= height + 'px';
+    }
+    function hideEmail(){
+      document.getElementById("address-popup").style.top='100%';
+    }
+    </script>
+        
+
+  </body>
+
+</html>
