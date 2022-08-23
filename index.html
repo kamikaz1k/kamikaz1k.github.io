@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- using twitter bootstrap, but of course -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="http://www.imxprs.com/css/fonts.css?v=1.3.2">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="/static/styles/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/styles/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/styles/fonts.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
 
     <!-- jQuery Module -->
@@ -40,22 +41,22 @@
         background-image: linear,to left bottom,rgba(159,88,150,0) 0%,rgba(159,88,150,0.6) 100%;
         /*Lifted from Heroku*/
 
-        height: 200px; 
+        height: 200px;
         padding-top: 50px;
         margin-top: 50px;
         text-align: center;
-        color: rgba(255,255,255,0.75); 
+        color: rgba(255,255,255,0.75);
       }
 
       .footer-area a {
-        color: rgba(255,255,255,0.75); 
+        color: rgba(255,255,255,0.75);
         padding: 10px;
         -webkit-transition: 0.5s;
         transition: 0.5s;
       }
 
       .footer-area a:hover {
-        color: rgba(255,255,255,1); 
+        color: rgba(255,255,255,1);
       }
 
       .project-entry {
@@ -64,8 +65,9 @@
         /*padding-top: 20px;*/
         /*padding-bottom: 20px;*/
         /*border: 3px solid black;*/
-        padding: 15px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+        padding: 40px 15px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         /*Lifted from Heroku*/
         /*color: #fff;*/
         /*background-color: #79589F;*/
@@ -80,11 +82,13 @@
 
       .project-entry img {
         height: 150px;
+        max-width: 150px;
+        object-fit: cover;
       }
 
-      .no-logo { 
-        width: 150px; 
-        /*background-color: rgba(0,0,0,0.9);*/ 
+      .no-logo {
+        width: 150px;
+        /*background-color: rgba(0,0,0,0.9);*/
       }
 
       .project-entry p {
@@ -144,7 +148,7 @@
         color: rgba(255,255,255,1);
         padding: 25px;
         margin-bottom: 40px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
       }
 
       @media (min-width: 1024px) {
@@ -255,7 +259,7 @@
       }
 
     </style>
-  
+
   </head>
 
   <body>
@@ -289,23 +293,23 @@
             <h1 class="header-icon">KD</h1>
         </div>
     </div>
- 
+
     <div class="container">
         <div class="jumbotron">
             <!-- <h1>Kaiser Dandangi</h1> -->
             <h3>Imagine. Engineer. Execute.</h3>
-            <p>Kaiser Dandangi is an engineer with a passion for progress and he is ready for his next big challenge. 
+            <p>Kaiser Dandangi is an engineer with a passion for progress and he is ready for his next big challenge.
               Currently working as a Dev Lead looking for a challenging and high learning potential role in either Product or Engineering.</p>
-            <p>I am very proficient in JavaScript and the <a href="#cravelist">AngularJS</a> Framework. 
-              I am developing a skillset in <a href="#sonartyde">React</a> and <a href="#boomstream">NodeJS</a>. 
-              And I have experience working with <a href="https://github.com/kamikaz1k/chez_dandangi">Python/Flask</a>, 
+            <p>I am very proficient in JavaScript and the <a href="#cravelist">AngularJS</a> Framework.
+              I am developing a skillset in <a href="#sonartyde">React</a> and <a href="#boomstream">NodeJS</a>.
+              And I have experience working with <a href="https://github.com/kamikaz1k/chez_dandangi">Python/Flask</a>,
               and <a href="https://github.com/kamikaz1k/cravelist-android">Java/Android</a>.
             </p>
 
         </div>
     </div>
 
-    <div class="container margin-top-bottom">
+    <div class="container margin-top-bottom" style="display: none">
 
           <h1 class="section-header" id="professional">Professional</h1>
 
@@ -317,7 +321,7 @@
                 <h4><span>Capgemini Canada</span></h4>
                 <ul>
                   <li>Managed a remote developer team to deliver a complex SPA using the AngularJS Framework.</li>
-                  <li>Incorporated Test Driven Development (TDD) practices by establishing unit testing guidelines 
+                  <li>Incorporated Test Driven Development (TDD) practices by establishing unit testing guidelines
                     and implementing processes for test case creation, code coverage, and pass criteria</li>
                   <li>Conducted code reviews and established a style guide that incorporated best practices for JS and Angular code</li>
                 </ul>
@@ -342,16 +346,43 @@
     </div>
 
     <div class="container margin-top-bottom">
-        
+
         <h1 class="section-header" id="projects">Projects</h1>
 
         <div class="row">
 
+          <div class="col-sm-4">
+            <div class="project-entry" id="cravelist">
+              <img src="/images/gifr.gif" class="img-circle">
+              <h3>Gif & Img Tools</h3>
+              <p class="item-description">Collection of web based tools for making meme gifs: Gif Overlay Tools; Touch Friendly Image Editing (with layers); Frame by Frame GIF sketching; Simple Overlay app.</p>
+            <a class="btn btn-dark" href="https://github.com/kamikaz1k/gif-edit">More Info</a>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="project-entry" id="cravelist">
+              <img src="/images/slack-emoji.png" class="img-circle">
+              <h3>Slack Emoji ASCII</h3>
+              <p class="item-description">(Forked) Generate ASCII art with slack emojis. Type text and convert it into a grid of emojis for copypasta fun!</p>
+            <a class="btn btn-dark" href="https://github.com/kamikaz1k/slack-emoji-converter">More Info</a>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="project-entry" id="cravelist">
+              <img src="/images/reakt.png" class="img-circle">
+              <h3>ReaKt</h3>
+              <p class="item-description">Trying to recreate a crappy react for learning. Just does rendering for now; soon state via hooks!</p>
+            <a class="btn btn-dark" href="https://github.com/kamikaz1k/reakt">More Info</a>
+            </div>
+          </div>
+
             <div class="col-sm-4">
               <div class="project-entry" id="cravelist">
-                <img src="https://lh3.googleusercontent.com/9MuU7GB0IF8K1ffs4qfVkZE1enVfC_nmRvXINYMrkqIcrU02X4hoIZfNhTHlCG4gHPCd=w300-rw" class="img-circle">
+                <img src="/images/cravelist-logo.webp" class="img-circle">
                 <h3>CraveList</h3>
-                <p class="item-description">A foodie app to keep track of all the things you want to eat. 
+                <p class="item-description">A foodie app to keep track of all the things you want to eat.
                   Built using Ionic (Cordova + Angular) the application runs on both iOS and Android.</p>
               <a class="btn btn-dark" href="https://play.google.com/store/apps/details?id=com.technosnaxapps.cravelist">More Info</a>
               </div>
@@ -359,7 +390,7 @@
 
             <div class="col-sm-4">
               <div class="project-entry" id="boomstream">
-                <img src="http://i.imgur.com/rIWqSkh.png">
+                <img src="/images/boom-stream.png">
                 <h3>BoomStream</h3>
                 <p class="item-description">Listen to music with your friends at the same time!
                   The application uses nodeJS and websockets to keep clients in sync.</p>
@@ -369,10 +400,10 @@
 
             <div class="col-sm-4">
               <div class="project-entry" id="sonartyde">
-                <img src="http://i.imgur.com/TmVQvBp.png" class="img-circle">
+                <img src="/images/sonar-tyde.png" class="img-circle">
                 <h3>SonarTyde</h3>
                 <p class="item-description">
-                    Enjoy truly random tracks from SoundCloud's extensive library of music. 
+                    Enjoy truly random tracks from SoundCloud's extensive library of music.
                     App uses React's component first pattern to put together a simple but modular app.
                 </p>
               <a class="btn btn-dark" href="https://github.com/kamikaz1k/sonar_tyde">More Info</a>
@@ -384,7 +415,7 @@
                 <img class="img-circle no-logo" style="background-color: rgba(10,10,120,0.9);">
                 <h3>SweepMines</h3>
                 <p class="item-description">
-                    Look for mines in a grid...totally original idea. 
+                    Look for mines in a grid...totally original idea.
                     Built fully in vanilla JavaScript using Object Oriented Programming principles.
                 </p>
                 <a class="btn btn-dark" href="https://kamikaz1k.github.io/sweepmines/">More Info</a>
@@ -396,8 +427,8 @@
                 <img class="img-circle no-logo" style="background-color: rgba(120,10,120,0.9);">
                 <h3>Pick'em'up GO!</h3>
                 <p class="item-description">
-                    An ad-hoc event hosting service. Host pickup games and post it on the internet. 
-                    Supports login using FB, Twitter, Google OAuth2.0 
+                    An ad-hoc event hosting service. Host pickup games and post it on the internet.
+                    Supports login using FB, Twitter, Google OAuth2.0
                     (Might take some time for the container to spin up.)
                 </p>
               <a class="btn btn-dark" href="https://pickemupgo.herokuapp.com/">More Info</a>
@@ -427,21 +458,21 @@
     </div>
 
     <div class="container-fluid footer-area">
-        <footer class="footer"> 
+        <footer class="footer">
             <p style="font-family:Raleway;">GET IN TOUCH</p>
             <a href="https://github.com/kamikaz1k/"><i class="fa fa-github-alt fa-3x" aria-hidden="true"></i></a>
             <a href="https://ca.linkedin.com/in/kaiserdandangi"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
             <a href="https://medium.com/@kamikaz1_k"><i class="fa fa-medium fa-3x" aria-hidden="true"></i></a>
             <a onclick="showEmail()"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
             <!-- <a href="mailto:kaiser.dandangi@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a> -->
-            
+
             <br>
             <br>
             <br>
             <p style="font-family:Raleway;">&copy; Kaiser Dandangi 2016</p>
         </footer>
     </div>
-  
+
     <script type="text/javascript">
     function showEmail(){
       var height = window.innerHeight/2 - 75;
@@ -452,7 +483,7 @@
       document.getElementById("address-popup").style.top='100%';
     }
     </script>
-        
+
 
   </body>
 
